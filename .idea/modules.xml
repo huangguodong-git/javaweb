@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/struts_demo/struts_demo.iml" filepath="$PROJECT_DIR$/struts_demo/struts_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/struts_hello/struts_hello.iml" filepath="$PROJECT_DIR$/struts_hello/struts_hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/struts_invole/struts_invole.iml" filepath="$PROJECT_DIR$/struts_invole/struts_invole.iml" />
+    </modules>
+  </component>
+</project>

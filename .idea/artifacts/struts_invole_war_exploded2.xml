@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="struts_invole:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/struts_invole_war_exploded2</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="struts_invole/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="struts_invole" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
