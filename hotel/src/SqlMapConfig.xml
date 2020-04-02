@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>  
+        <setting name="mapUnderscoreToCamelCase" value="true" />  
+    </settings>  
+	<environments default="development">
+		<environment id="development">
+			<!--使用jdbc事务管理 -->
+			<transactionManager type="JDBC"/>
+			<!-- 数据库连接池 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver"/>
+				<property name="url" value="jdbc:mysql://localhost:3306/hotel?characterEncoding=utf-8"/>
+				<property name="username" value="root"/>
+				<property name="password" value="123456"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- 引入映射配置文件 -->
+	<mappers>
+		<mapper resource="mapper/dinnerTable.xml"/>
+		<mapper resource="mapper/foodType.xml"/>
+		<mapper resource="mapper/food.xml"/>
+		<mapper resource="mapper/order.xml"/>
+		<mapper resource="mapper/orderDetail.xml"/>
+		<mapper resource="mapper/user.xml"/>
+	</mappers>
+</configuration>

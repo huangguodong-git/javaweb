@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.hgd.hotel.mapper.DinnerTableMapper">
+	<!-- 查询餐桌 -->
+	<select id="findAll" resultType="com.hgd.hotel.po.DinnerTable">
+		SELECT
+			* 
+		FROM 
+			tb_dinner_table
+	</select>
+	<!-- 删除或者更新餐桌 -->
+	<select id="findByDinnerTableId" parameterType="int" resultType="com.hgd.hotel.po.DinnerTable">
+		SELECT 
+			* 
+		FROM 
+			tb_dinner_table 
+		where 
+			id=#{id}
+	</select>
+	<update id="updateDinnerTable" parameterType="com.hgd.hotel.po.DinnerTable">
+		UPDATE 
+			tb_dinner_table 
+		SET 
+			table_name = #{tableName},
+			table_status = #{tableStatus},
+			begin_use_date = #{beginUseDate},
+			create_date = #{createDate},
+			update_date = #{updateDate},
+			disabled = #{disabled} 
+		WHERE 
+			id = #{id}
+	</update>
+	<insert id="save" parameterType="com.hgd.hotel.po.DinnerTable">
+		INSERT INTO  tb_dinner_table(table_Name,create_date) VALUES(#{tableName},NOW())
+	</insert>
+</mapper>

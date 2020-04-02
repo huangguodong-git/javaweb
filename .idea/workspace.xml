@@ -6,60 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae84b8d7-b2a1-489e-a4b2-7cf65c77d338" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/hotel.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/com/hgd/hotel/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/com/hgd/hotel/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/WEB-INF/jsp/sys/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/WEB-INF/lib/c3p0-0.9.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/WEB-INF/lib/jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/WEB-INF/lib/mybatis-3.5.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/WEB-INF/lib/mysql-connector-java-5.1.37-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/WEB-INF/lib/standard.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/common_style_blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/QueryArea_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/TableTail_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/TableTitle_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/button_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/inputPageHeadBg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/login_ico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/pageNum_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/title_bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/title_bg_end.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/title_bg_head.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/top_head1_bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/img/top_head2_bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/index_1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/css/sys/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/Header_back.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/Header_forward.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/Header_refresh.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/baizhuoxia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/func20001.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/help2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/img/56a46b7590f5672af5b8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/img/menu_arrow_single.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/img/menu_btn_bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/img/top_head1_bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/img/top_head2_bg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/info.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/item_point.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/login_background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/login_ico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/logout.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/title_arrow.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/user.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/images/sys/version.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/js/jquery-2.2.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/js/regex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/public/bottom.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/public/left.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/public/right.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/web/public/top.html" beforeDir="false" />
-    </list>
+    <list default="true" id="ae84b8d7-b2a1-489e-a4b2-7cf65c77d338" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,17 +32,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hotel/src/mapper/dinnerTable.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -234,6 +171,40 @@
               <item name="javaweb" type="462c0819:PsiDirectoryNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hgd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hgd" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hgd" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javaweb" type="b2602c69:ProjectViewProjectNode" />
@@ -438,7 +409,7 @@
       <workItem from="1585704923557" duration="26000" />
       <workItem from="1585719840915" duration="36000" />
       <workItem from="1585746107975" duration="22000" />
-      <workItem from="1585810889982" duration="22000" />
+      <workItem from="1585810889982" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="struts2的入门代码提交">
       <created>1585299429696</created>
@@ -482,15 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585697353680</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="餐厅管理后台系统">
+      <created>1585811095061</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585811095061</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22807000" />
+    <option name="totallyTimeSpent" value="24041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49848944" visible="true" weight="0.29539296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -567,14 +544,14 @@
     <MESSAGE value="struts2的入门代码提交" />
     <MESSAGE value="struts2的全局配置和局部配置" />
     <MESSAGE value="油画商城环境搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="油画商城环境搭建" />
+    <MESSAGE value="餐厅管理后台系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="餐厅管理后台系统" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/struts_demo/src/com/hgd/struts2/Demo1Action.java" />
     <entry file="file://$PROJECT_DIR$/struts_demo/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/struts_demo/src/com/hgd/struts2/Demo3Action.java" />
     <entry file="file://$PROJECT_DIR$/struts_demo/src/com/hgd/struts2/Demo2Action.java" />
@@ -635,10 +612,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hotel/src/com/hgd/hotel/dto/DinnerTableDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hotel/src/mapper/dinnerTable.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
         </state>
       </provider>
     </entry>
