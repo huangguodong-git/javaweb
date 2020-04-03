@@ -19,7 +19,11 @@ public class FoodController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("/WEB-INF/jsp/sys/foodList.jsp").forward(request, response);
+		String method=request.getParameter("method");
+		if (method!=null && method.equals("list")) {
+			
+			request.getRequestDispatcher("/WEB-INF/jsp/sys/foodList.jsp").forward(request, response);
+		}
 	}
 
 }

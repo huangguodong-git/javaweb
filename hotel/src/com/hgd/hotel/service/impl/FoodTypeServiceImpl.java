@@ -17,4 +17,24 @@ public class FoodTypeServiceImpl implements FoodTypeService {
 		return foodTypeMapper.findAll();
 	}
 
+	@Override
+	public FoodType findById(Integer id) {
+		return foodTypeMapper.findById(id);
+	}
+
+	@Override
+	public void updateFoodType(FoodType foodType) {
+		foodTypeMapper.updateFoodType(foodType);
+	}
+
+	@Override
+	public FoodType findByTypeName(String foodTypeName) {
+		return foodTypeMapper.findByTypeName(foodTypeName);
+	}
+
+	@Override
+	public void save(FoodType foodType) {
+		foodTypeMapper.save(foodType);
+	}
+
 }

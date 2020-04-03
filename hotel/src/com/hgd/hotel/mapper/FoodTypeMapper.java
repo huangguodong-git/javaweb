@@ -8,4 +8,12 @@ public interface FoodTypeMapper {
 
 	List<FoodType> findAll();
 
+	FoodType findById(Integer id);
+
+	void updateFoodType(FoodType foodType);
+
+	FoodType findByTypeName(String foodTypeName);
+
+	void save(FoodType foodType);
+	
 }

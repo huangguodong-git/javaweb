@@ -9,4 +9,37 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		FROM 
 			   tb_food_type
 	</select>
+	<select id="findById" parameterType="int" resultType="com.hgd.hotel.po.FoodType">
+		SELECT
+		 	   * 
+		FROM 
+			   tb_food_type
+		where 
+			   id=#{id}
+	</select>
+	<update id="updateFoodType" parameterType="com.hgd.hotel.po.FoodType">
+		UPDATE 
+				tb_food_type 
+		SET 
+				type_name = #{typeName},
+				update_date = NOW(),
+				disabled = #{disabled} 
+		WHERE 
+				id = #{id}
+	</update>
+	<select id="findByTypeName" parameterType="com.hgd.hotel.po.FoodType">
+		SELECT
+		 	   * 
+		FROM 
+			   tb_food_type
+		where 
+			   type_name=#{typeName}
+	</select>
+	<insert id="save" parameterType="com.hgd.hotel.po.FoodType">
+		insert into
+					tb_food_type 
+					(type_name,update_date)
+		values
+					 (#{typeName},NOW())
+	</insert>
 </mapper>
