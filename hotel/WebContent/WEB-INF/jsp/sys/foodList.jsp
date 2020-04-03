@@ -53,14 +53,7 @@
 	<div id="QueryArea">
 		<form action="${ctx }/sys/food.action" method="get"  target="right">
 			<input type="hidden" name="method" value="list">
-			<input type="text" id="keyword" name="keyword" value="${keyword}" placeholder="请输入菜品名称">
-			<select name="foodTypeId" id="foodTypeId"  onchange="foodTypeChange()">
-				<option value="">全部</option>
-					<c:forEach items="${foodTypes}"  var="foodType">
-						<option value="${foodType.id}">${foodType.typeName}</option>
-					</c:forEach>
-			</select>
-			<input type="submit" value="搜索">
+		
 			<a href="${ctx}/sys/food.action?method=addPage" target="right"><input type="button" value="添加"></a>
 		</form>
 	</div>
