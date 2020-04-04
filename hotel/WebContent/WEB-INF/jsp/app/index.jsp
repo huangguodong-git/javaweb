@@ -47,7 +47,7 @@
 <body> 
 	<!-- banner -->
 	<div class="banner" style="height: 900px;">
-		<jsp:include page="header.jsp"></jsp:include>
+		<%@ include file="header.jsp" %>
 		<!-- banner-text -->
 		<div class="banner-text">	
 			<div class="container" style="padding-left: 280px;margin-top: -100px;">
