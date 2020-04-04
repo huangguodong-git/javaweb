@@ -5,5 +5,25 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  
 <!-- namespace：命名空间，用于隔离sql-->
 <mapper namespace="com.hgd.hotel.mapper.UserMapper">
-	
+	<select id="login" parameterType="com.hgd.hotel.dto.UserDto" resultType="com.hgd.hotel.po.User">
+		SELECT 
+			* 
+		FROM 
+			tb_user 
+		WHERE 
+			LOGIN_NAME=#{loginName} 
+		AND 
+			PASSWORD=#{password}
+	</select>
+	<insert id="register" parameterType="com.hgd.hotel.po.User">
+		INSERT INTO tb_user(LOGIN_NAME,PASSWORD,email,phone,create_date)  VALUES(#{loginName},#{password},#{email},#{phone},NOW())
+	</insert>
+	<select id="findByLoginName" parameterType="String" resultType="com.hgd.hotel.po.User">
+		SELECT 
+			* 
+		FROM 
+			tb_user 
+		WHERE 
+			LOGIN_NAME=#{loginName}
+	</select>
 </mapper>

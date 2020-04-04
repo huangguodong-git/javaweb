@@ -138,7 +138,7 @@ function onRegister(){
 	<div id="Head_1">
 		<!-- 标题 -->
 		<div id="Head_1_Logo">
-			<b style="font-family: '黑体'">IT实战学院-点餐系统后台注册</b>
+			<b style="font-family: '黑体'">果冻餐厅-点餐系统后台注册</b>
 		</div>
 		<div id="Head_1_FunctionButton"> 
 			<a  href="${ctx }/sys/login.do"  style="color: white;">

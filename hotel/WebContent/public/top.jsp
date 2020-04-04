@@ -124,7 +124,7 @@ margin-left: 10px;
 				<!-- 欢迎用户的文字 -->
 				<div id="Head_1_UserWelcome">
 					<img border="0" width="13" height="14" src="${pageContext.request.contextPath }/images/sys/user.gif" /> 
-					您好，<b>admin</b>
+					您好，<b>${user.loginName}</b>
 					<a target="_parent" href="${pageContext.request.contextPath }/sys/loginout.action"  style="color: white;">
 					退出
 				</a>

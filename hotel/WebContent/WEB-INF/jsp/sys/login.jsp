@@ -56,7 +56,7 @@ function submitTable(){
 	<div id="Head_1">
 		<!-- 标题 -->
 		<div id="Head_1_Logo">
-			<b style="font-family: '黑体'">IT实战学院-点餐系统后台登录</b>
+			<b style="font-family: '黑体'">果冻餐厅-点餐系统后台登录</b>
         </div>
 	</div>
 	<div class="logo_box">
