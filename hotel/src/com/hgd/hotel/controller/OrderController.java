@@ -26,7 +26,12 @@ public class OrderController extends HttpServlet {
 			request.setAttribute("orders",orders);
 			request.getRequestDispatcher("/WEB-INF/jsp/sys/orderList.jsp").forward(request, response);
 		}else if (method!=null && method.equals("update")) {
-			
+			String id=request.getParameter("id");
+			String disabled=request.getParameter("disabled");
+			Order order=orderService.findById(Integer.parseInt(id));
+			order.setDisabled(Integer.parseInt(disabled));
+			orderService.update(order);
+			response.sendRedirect(getServletContext().getContextPath()+"/sys/order.action");
 		}
 	}
 

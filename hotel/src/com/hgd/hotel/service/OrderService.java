@@ -8,4 +8,8 @@ public interface OrderService {
 
 	List<Order> findAll();
 
+	Order findById(int parseInt);
+
+	void update(Order order);
+
 }

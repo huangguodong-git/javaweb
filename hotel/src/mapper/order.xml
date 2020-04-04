@@ -8,4 +8,21 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="findAll" resultType="com.hgd.hotel.po.Order">
 		SELECT * FROM tb_order
 	</select>
+	<select id="findById" parameterType="int" resultType="com.hgd.hotel.po.Order">
+		SELECT * FROM tb_order where id=#{id}
+	</select>
+	<update id="update" parameterType="com.hgd.hotel.po.Order">
+		update
+			tb_order
+		set 
+			order_code=#{orderCode},
+			table_id=#{tableId},
+			total_Price=#{totalPrice},
+			order_Status=#{orderStatus},
+			order_Date=#{orderDate},
+			pay_date=#{payDate},
+			disabled=#{disabled}
+		where 
+			id=#{id}
+	</update>
 </mapper>

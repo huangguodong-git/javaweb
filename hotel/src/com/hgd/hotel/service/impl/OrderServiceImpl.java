@@ -16,4 +16,14 @@ public class OrderServiceImpl implements OrderService {
 		return orderMapper.findAll();
 	}
 
+	@Override
+	public Order findById(int id) {
+		return orderMapper.findById(id);
+	}
+
+	@Override
+	public void update(Order order) {
+		orderMapper.update(order);
+	}
+
 }

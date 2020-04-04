@@ -13,4 +13,16 @@ public class OrderDetailServiceImpl implements OrderService {
 		return null;
 	}
 
+	@Override
+	public Order findById(int parseInt) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Order order) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
