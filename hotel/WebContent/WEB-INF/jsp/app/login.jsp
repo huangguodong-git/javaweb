@@ -50,41 +50,13 @@
 <body> 
 	<!-- banner -->
 	<div class="banner about-w3bnr">
-		<!-- header -->
-		<div class="header">
-			<!-- //header-one -->    
-			<!-- navigation -->
-			<div class="navigation agiletop-nav">
-				<div class="container">
-					<nav class="navbar navbar-default">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header w3l_logo">
-							<h1><a href="${pageContext.request.contextPath}/app/index.do">IT实战学院</a></h1>
-						</div> 
-						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="${pageContext.request.contextPath}/app/index.do" class="active">主页</a></li>	
-								<!-- Mega Menu -->
-								<li class="dropdown">
-									<a href="${pageContext.request.contextPath}/app/menuList.do" class="dropdown-toggle" ">菜单 </a>
-								</li>
-								<li class="w3pages">
-									<a href="${pageContext.request.contextPath}/app/order.action?method=list">我的订单</a>
-								</li>  
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</div>
-			<!-- //navigation --> 
-		</div>
-		<!-- //header-end --> 
+		<%@ include file="header.jsp" %>
 	</div>
 	<!-- //banner -->    
 	<!-- breadcrumb -->  
 	<div class="container">	
 		<ol class="breadcrumb w3l-crumbs">
-			<li><a href="app/index.do"><i class="fa fa-home"></i> 主页</a></li> 
+			<li><a href="${pageContext.request.contextPath}/app/index.do"><i class="fa fa-home"></i> 主页</a></li> 
 			<li class="active">登录</li>
 		</ol>
 	</div>

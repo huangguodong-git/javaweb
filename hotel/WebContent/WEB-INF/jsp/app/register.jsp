@@ -126,7 +126,7 @@
 					<nav class="navbar navbar-default">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header w3l_logo">
-							<h1><a href="${pageContext.request.contextPath}/app/index.do">IT实战学院</a></h1>
+							<h1><a href="${pageContext.request.contextPath}/app/index.do">果冻餐厅</a></h1>
 						</div> 
 						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 							<ul class="nav navbar-nav navbar-right">
@@ -189,7 +189,7 @@
 							<li>
 								<label class="checkbox">
 									<input type="checkbox" name="readme" id="readme"  checked="checked"><i></i> 
-									<span>我已认真阅读并同意《IT实战学院服务条款》</span>
+									<span>我已认真阅读并同意《果冻餐厅服务条款》</span>
 								</label> 
 							</li> 
 						</ul>
@@ -203,7 +203,7 @@
 	</div>
 	<div class="copyw3-agile"> 
 		<div class="container">
-			<p>版权归 &copy; 2018.IT实战学院 所有.</p>
+			<p>版权归 &copy; 2018.果冻餐厅 所有.</p>
 		</div>
 	</div>
 </body>

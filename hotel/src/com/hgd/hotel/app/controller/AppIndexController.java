@@ -27,7 +27,7 @@ public class AppIndexController extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String method=request.getParameter("method");
-		if (method!=null && method.equals("submitTable")) {
+		//if (method!=null && method.equals("submitTable")) {
 			String tableName=request.getParameter("tableName");
 			String tableStatus=request.getParameter("tableStatus");
 			String disabled=request.getParameter("disabled");
@@ -38,7 +38,7 @@ public class AppIndexController extends HttpServlet {
 			List<DinnerTable> dinnerTables=dinnerTableService.findAll(map);
 			request.setAttribute("dinnerTables",dinnerTables);
 			request.getRequestDispatcher("/WEB-INF/jsp/app/index.jsp").forward(request, response);
-		}
+		//}
 	}
 
 }

@@ -21,7 +21,7 @@
 								<li class="w3pages">
 									<a href="${pageContext.request.contextPath}/app/order.action?method=list" class="dropdown-toggle">我的订单</a>
 								</li>  
-								<c:if test="${empty session_user }">
+								<c:if test="${empty user }">
 									<li class="head-dpdn">
 										<a href="${pageContext.request.contextPath}/app/login.do">登录</a>
 									</li>
@@ -29,9 +29,9 @@
 										<a href="${pageContext.request.contextPath}/app/register.do">免费注册</a>
 									</li>
 								</c:if>
-								<c:if test="${not empty session_user }">
+								<c:if test="${not empty user }">
 									<li class="head-dpdn">
-										<a>${session_user.loginName} 您好！</a>
+										<a>${user.loginName} 您好！</a>
 									</li>
 									<li class="head-dpdn">
 										<a href="${pageContext.request.contextPath}/app/loginout.action">退出</a>
