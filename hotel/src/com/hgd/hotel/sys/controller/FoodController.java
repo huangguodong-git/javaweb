@@ -1,4 +1,4 @@
-package com.hgd.hotel.controller;
+package com.hgd.hotel.sys.controller;
 
 import java.io.File;
 import java.io.IOException;
