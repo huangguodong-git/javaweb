@@ -26,4 +26,9 @@ public class FoodServiceImpl implements FoodService {
 		foodMapper.update(food);
 	}
 
+	@Override
+	public void save(Food food) {
+		foodMapper.save(food);
+	}
+
 }

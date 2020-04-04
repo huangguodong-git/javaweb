@@ -12,4 +12,6 @@ public interface FoodService {
 
 	void update(Food food);
 
+	void save(Food food);
+
 }

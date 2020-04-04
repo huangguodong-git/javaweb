@@ -12,4 +12,6 @@ public interface FoodMapper {
 
 	void update(Food food);
 
+	void save(Food food);
+
 }

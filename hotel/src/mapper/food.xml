@@ -9,7 +9,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="findById" parameterType="int" resultType="com.hgd.hotel.po.Food">
 		SELECT * FROM tb_food where id=#{id}
 	</select>
-	<select id="update" parameterType="com.hgd.hotel.po.Food">
+	<update id="update" parameterType="com.hgd.hotel.po.Food">
 		update 
 			tb_food 
 		set 
@@ -23,5 +23,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			disabled = #{disabled} 
 		WHERE 
 			id = #{id}
-	</select>
+	</update>
+	<insert id="save" parameterType="com.hgd.hotel.po.Food">
+		insert into
+				tb_food(food_name,foodType_id,price,discount,remark,img,disabled,update_date)
+		values
+				(#{foodName},#{foodTypeId},#{price},#{discount},#{remark},#{img},#{disabled},NOW())
+	</insert>
 </mapper>
