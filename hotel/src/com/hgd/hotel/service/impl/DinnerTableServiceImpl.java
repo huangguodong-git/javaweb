@@ -3,6 +3,7 @@ package com.hgd.hotel.service.impl;
 import java.util.List;
 import java.util.Map;
 
+import com.hgd.hotel.dto.DinnerTableDto;
 import com.hgd.hotel.mapper.DinnerTableMapper;
 import com.hgd.hotel.po.DinnerTable;
 import com.hgd.hotel.service.DinnerTableService;
@@ -31,6 +32,11 @@ public class DinnerTableServiceImpl implements DinnerTableService {
 	@Override
 	public void save(DinnerTable dinnerTable) {
 		dinnerTableMapper.save(dinnerTable);
+	}
+
+	@Override
+	public List<DinnerTable> findByNameAndStatus(DinnerTableDto dinnerTableDto) {
+		return dinnerTableMapper.findByNameAndStatus(dinnerTableDto);
 	}
 
 }

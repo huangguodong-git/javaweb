@@ -35,4 +35,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<insert id="save" parameterType="com.hgd.hotel.po.DinnerTable">
 		INSERT INTO  tb_dinner_table(table_Name,create_date) VALUES(#{tableName},NOW())
 	</insert>
+	<!-- 前台查询可使用的餐桌 -->
+	<select id="findByNameAndStatus" parameterType="com.hgd.hotel.dto.DinnerTableDto" resultType="com.hgd.hotel.po.DinnerTable">
+		SELECT 
+			* 
+		FROM 
+			tb_dinner_table 
+		<where>
+			<if test="tableName!=null and tableName!=''">
+				and table_Name=#{tableName}
+			</if>
+			<if test="tableStatus!=null and tableStatus!=''">
+				and table_status=#{tableStatus}
+			</if>
+			and disabled=1
+		</where>
+	</select>
 </mapper>
