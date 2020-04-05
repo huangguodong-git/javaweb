@@ -1,28 +1,17 @@
 package com.hgd.hotel.service.impl;
 
-import java.util.List;
+import com.hgd.hotel.mapper.OrderDetailMapper;
+import com.hgd.hotel.po.OrderDetail;
+import com.hgd.hotel.service.OrderDetailService;
+import com.hgd.hotel.util.MapperUtils;
 
-import com.hgd.hotel.po.Order;
-import com.hgd.hotel.service.OrderService;
+public class OrderDetailServiceImpl implements OrderDetailService {
 
-public class OrderDetailServiceImpl implements OrderService {
-
+	private OrderDetailMapper orderDetailMapper=MapperUtils.getInstence().getDao(OrderDetailMapper.class);
+	
 	@Override
-	public List<Order> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Order findById(int parseInt) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void update(Order order) {
-		// TODO Auto-generated method stub
-		
+	public void save(OrderDetail orderDetail) {
+		orderDetailMapper.save(orderDetail);
 	}
 
 }

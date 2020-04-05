@@ -25,4 +25,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		where 
 			id=#{id}
 	</update>
+	<insert id="save" parameterType="com.hgd.hotel.po.Order" keyProperty="id" useGeneratedKeys="true">
+		insert into 
+			tb_order
+				(order_code,table_id,total_Price,order_Status,order_Date,pay_date,disabled)
+			values
+				(#{orderCode},#{tableId},#{totalPrice},#{orderStatus},now(),#{payDate},#{disabled})
+	</insert>
 </mapper>

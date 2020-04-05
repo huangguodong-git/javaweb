@@ -2,8 +2,15 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- 
-<!-- namespace：命名空间，用于隔离sql-->
 <mapper namespace="com.hgd.hotel.mapper.OrderDetailMapper">
-	
+	<insert id="save" parameterType="com.hgd.hotel.po.OrderDetail">
+		insert into
+				tb_order_detail
+					(orderId,food_id,buyNum,disabled,discount)
+				values
+					(#{orderId},#{foodId},#{buyNum},#{disabled},#{discount})
+	</insert>
+	<select id="findByOrderId" parameterType="com.hgd.hotel.po.Order" resultType="com.hgd.hotel.po.OrderDetail">
+		select * from tb_order_detail where orderId=#{orderId}
+	</select>
 </mapper>
