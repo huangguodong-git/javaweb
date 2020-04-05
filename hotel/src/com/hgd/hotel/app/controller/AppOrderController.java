@@ -95,6 +95,11 @@ public class AppOrderController extends HttpServlet {
 			order.setOrderStatus(0);
 			orderService.update(order);			
 			response.sendRedirect(getServletContext().getContextPath()+"/app/index.do");
+		}else if (method!=null && method.equals("list")) {
+			//Õ¹Ê¾¶©µ¥
+			List<Order> orders=orderService.findAll();
+			request.setAttribute("orders",orders);
+			request.getRequestDispatcher("/WEB-INF/jsp/app/orderList.jsp").forward(request, response);
 		}
 	}
 
