@@ -20,7 +20,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			total_Price=#{totalPrice},
 			order_Status=#{orderStatus},
 			order_Date=#{orderDate},
-			pay_date=#{payDate},
+			pay_date=now(),
 			disabled=#{disabled}
 		where 
 			id=#{id}

@@ -28,7 +28,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			begin_use_date = #{beginUseDate},
 			create_date = #{createDate},
 			update_date = #{updateDate},
-			disabled = #{disabled} 
+			disabled = #{disabled}
 		WHERE 
 			id = #{id}
 	</update>

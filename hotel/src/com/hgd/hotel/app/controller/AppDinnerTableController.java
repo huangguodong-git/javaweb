@@ -25,8 +25,9 @@ public class AppDinnerTableController extends HttpServlet {
 		String tableStatus = request.getParameter("tableStatus");
 		System.out.println("--------------"+dinnerTableId+"====="+tableStatus);
 		DinnerTable dinnerTable=dinnerTableService.findByDinnerTableId(Integer.parseInt(dinnerTableId));
+		System.out.println("餐桌改前："+dinnerTable);
 		dinnerTable.setTableStatus(Integer.parseInt(tableStatus));
-		//修改餐厅使用状态(是否使用)
+		System.out.println("餐桌改后："+dinnerTable);
 		dinnerTableService.updateDinnerTable(dinnerTable);
 		response.sendRedirect(getServletContext().getContextPath()+"/app/menu.action?id="+dinnerTableId);
 	}
