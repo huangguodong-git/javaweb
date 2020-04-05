@@ -14,4 +14,6 @@ public interface FoodService {
 
 	void save(Food food);
 
+	List<Food> findByFoodTypeId(int foodTypeId);
+
 }

@@ -31,4 +31,9 @@ public class FoodServiceImpl implements FoodService {
 		foodMapper.save(food);
 	}
 
+	@Override
+	public List<Food> findByFoodTypeId(int foodTypeId) {
+		return foodMapper.findByFoodTypeId(foodTypeId);
+	}
+
 }

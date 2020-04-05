@@ -14,4 +14,6 @@ public interface FoodMapper {
 
 	void save(Food food);
 
+	List<Food> findByFoodTypeId(int foodTypeId);
+
 }

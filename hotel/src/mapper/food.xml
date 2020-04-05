@@ -9,6 +9,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="findById" parameterType="int" resultType="com.hgd.hotel.po.Food">
 		SELECT * FROM tb_food where id=#{id}
 	</select>
+	<select id="findByFoodTypeId" parameterType="int" resultType="com.hgd.hotel.po.Food">
+		SELECT * FROM tb_food where foodType_id=#{foodTypeId}
+	</select>
 	<update id="update" parameterType="com.hgd.hotel.po.Food">
 		update 
 			tb_food 
