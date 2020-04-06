@@ -5,5 +5,28 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  
 <!-- namespace：命名空间，用于隔离sql-->
 <mapper namespace="com.hgd.shop.mapper.CategoryMapper">
-	
+	<select id="findAll" resultType="com.hgd.shop.po.Category">
+		select * from category
+	</select>
+	<insert id="save" parameterType="com.hgd.shop.po.Category">
+		insert into
+			category(cname,cdesc)
+		values
+			(#{cname},#{cdesc})
+	</insert>
+	<delete id="delete" parameterType="com.hgd.shop.po.Category">
+		delete from category where cid=#{cid}
+	</delete>
+	<select id="findByCid" parameterType="int" resultType="com.hgd.shop.po.Category">
+		select * from category where cid=#{cid}
+	</select>
+	<update id="update" parameterType="com.hgd.shop.po.Category">
+		update 
+			category
+		set
+			cname=#{cname},
+			cdesc=#{cdesc}
+		where 
+			cid=#{cid}
+	</update>
 </mapper>
