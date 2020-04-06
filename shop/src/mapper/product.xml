@@ -5,5 +5,39 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  
 <!-- namespace：命名空间，用于隔离sql-->
 <mapper namespace="com.hgd.shop.mapper.ProductMapper">
-	
+	<select id="findAll" resultType="com.hgd.shop.po.Product">
+		select * from product
+	</select>
+	<insert id="save" parameterType="com.hgd.shop.po.Product">
+		insert into 
+			product
+		values
+			(null,#{pname},#{author},#{price},#{description},#{filename},#{path},#{cid})
+	</insert>
+	<delete id="delete" parameterType="int">
+		delete from product where pid=#{pid}
+	</delete>
+	<update id="update" parameterType="com.hgd.shop.po.Product">
+		update 
+			product
+		set
+			pname=#{pname},
+			author=#{author},
+			price=#{price},
+			description=#{description},
+			filename=#{filename},
+			path=#{path},
+			cid=#{cid}
+		where 
+			pid=#{pid}
+	</update>
+	<select id="findById" parameterType="int" resultType="com.hgd.shop.po.Product">
+		select * from product where pid=#{pid} 
+	</select>
+	<select id="findCount" resultType="int">
+		select count(*) from product
+	</select>
+	<select id="findByPage" parameterType="com.hgd.shop.dto.PageDto" resultType="com.hgd.shop.po.Product">
+		select * from product limit #{begin},#{limit}
+	</select>
 </mapper>

@@ -8,6 +8,7 @@ public class Product {
 	private String description;
 	private String filename;
 	private String path;
+	private Integer cid;
 	private Category category = new Category();
 	public Integer getPid() {
 		return pid;
@@ -57,10 +58,16 @@ public class Product {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
+	public Integer getCid() {
+		return cid;
+	}
+	public void setCid(Integer cid) {
+		this.cid = cid;
+	}
 	@Override
 	public String toString() {
 		return "Product [pid=" + pid + ", pname=" + pname + ", author=" + author + ", price=" + price + ", description="
-				+ description + ", filename=" + filename + ", path=" + path + ", category=" + category + "]";
+				+ description + ", filename=" + filename + ", path=" + path + ", cid=" + cid + ", category=" + category
+				+ "]";
 	}
-	
 }
